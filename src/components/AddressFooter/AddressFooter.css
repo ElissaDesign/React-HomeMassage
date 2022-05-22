@@ -1,0 +1,22 @@
+/* .background-footer-address{
+    background-color: #;
+} */
+.address-footer{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.left-text-address-footer{
+    margin-right: 20px;
+}
+.left-text-address-footer h1{
+    text-align: left;
+}
+.left-text-address-footer p{
+    text-align: left;
+}
+.location-footer{
+    display: flex;
+    align-items: center;
+}

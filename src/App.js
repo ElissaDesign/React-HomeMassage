@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import SocialNav from './components/SocialNav/SocialNavLinks'
+import NavBar from './components/NavBar/NavBar';
+import Hero from './components/Hero/hero';
+import NextToHero from './components/NextToHero/NextToHero';
+import HomeServices from './components/HomeServices/HomeServices';
+import JointHealing from './components/JointHealing/JointHealing';
+import ChairMassage from './components/ChairMassage/ChairMassage';
+import AddressFooter from './components/AddressFooter/AddressFooter';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <header>
+     <SocialNav/>
+     <NavBar/>
+     <Hero/>
+     </header>
+     <div className="Content">
+       <NextToHero/>
+       <HomeServices/>
+       <JointHealing/>
+       <ChairMassage/>
+     </div>
+     <footer>
+       <AddressFooter/>
+       <Footer/>
+     </footer>
     </div>
   );
 }
