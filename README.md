@@ -4,5 +4,5 @@ This project was made to give or facilitate the peaple who are interested in hav
 
 ## Netlify Deploy status badge
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/45b67b42-d69d-4c5c-affd-46acc23421ce/deploy-status)](https://app.netlify.com/sites/indevelopmentsite/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45b67b42-d69d-4c5c-affd-46acc23421ce/deploy-status)](https://app.netlify.com/sites/indevelopmentsite/deploys)![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Felissadesigner)
 
