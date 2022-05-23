@@ -16,7 +16,7 @@ const Hero = () => {
                     
                 </p>
                 <div className="button-container">
-                <Button TextButton ="Learn More"/>
+                <Button TextButton ="👇🏽 Scroll Down"/>
                 </div>
             </div>
            

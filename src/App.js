@@ -1,33 +1,33 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SocialNav from './components/SocialNav/SocialNavLinks'
 import NavBar from './components/NavBar/NavBar';
-import Hero from './components/Hero/hero';
-import NextToHero from './components/NextToHero/NextToHero';
-import HomeServices from './components/HomeServices/HomeServices';
-import JointHealing from './components/JointHealing/JointHealing';
-import ChairMassage from './components/ChairMassage/ChairMassage';
-import AddressFooter from './components/AddressFooter/AddressFooter';
 import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import Services from './components/Services/Services';
+import SocialMediaLinks from './components/SocialMediaLinks/SocialMediaLinks';
 
 function App() {
   return (
-    <div className="App">
-     <header>
-     <SocialNav/>
-     <NavBar/>
-     <Hero/>
-     </header>
-     <div className="Content">
-       <NextToHero/>
-       <HomeServices/>
-       <JointHealing/>
-       <ChairMassage/>
-     </div>
-     <footer>
-       <AddressFooter/>
-       <Footer/>
-     </footer>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+
+          <header>
+          <SocialNav/>
+          <NavBar/>
+          </header>
+          <div className="Content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+          </Routes>
+          </div>
+          <footer>
+            <SocialMediaLinks/>
+            <Footer/>
+          </footer>
+      </div>
+    </BrowserRouter>
   );
 }
 

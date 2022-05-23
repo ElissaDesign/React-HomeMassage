@@ -3,6 +3,15 @@
     height: 20%;
     background-color: #F58A52;
     z-index: 1;
+    transition: .3s ease-in-out;
+} 
+.main-header.fixed{
+    position: fixed;
+    height: 10%;
+    top: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    
 }
 nav{
     width: 80%;
