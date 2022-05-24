@@ -1,11 +1,10 @@
 import Artboard from '../Images/Artboard-1.png'
-import './JointHealing.css';
 
 const JointHealing = () => {
     return (
-        <div className="joint-JointHealing">
-            <div className="text-container">
-                <h3>Get Healed </h3>
+        <div className=" w-4/5 mx-auto my-10 py-10 md:flex md:items-center md:justify-center">
+            <div className="">
+                <h2 className='text-center text-primary text-xl uppercase mb-4'>Get Healed </h2>
                 <p>
                     Lörem ipsum makronera tör. Fagen parassade en bosat sav av spening. Bicentrism tida, demotion. Jän geovis. Kronde endotism.<br /> <br /> 
                     Lörem ipsum makronera tör. Fagen parassade en bosat sav av spening. Bicentrism tida, demotion. Jän geovis. Kronde endotism.

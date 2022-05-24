@@ -1,6 +1,4 @@
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import SocialNav from './components/SocialNav/SocialNavLinks'
+import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
@@ -9,11 +7,8 @@ import SocialMediaLinks from './components/SocialMediaLinks/SocialMediaLinks';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-
+      <>
           <header>
-          <SocialNav/>
           <NavBar/>
           </header>
           <div className="Content">
@@ -26,8 +21,7 @@ function App() {
             <SocialMediaLinks/>
             <Footer/>
           </footer>
-      </div>
-    </BrowserRouter>
+      </>
   );
 }
 
