@@ -1,11 +1,13 @@
+import NavBar from '../NavBar/NavBar';
 import SearchForm from '../SearchForms/SearchForm';
 import './Services.css';
 
 const Services = () => {
     return (
-        <div className="services-conainer">
+        <>
+            <NavBar/>
             <SearchForm/>
-        </div>
+        </>
     );
 }
  

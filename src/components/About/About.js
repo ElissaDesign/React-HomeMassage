@@ -3,9 +3,11 @@ import shipping from '../Images/shipping.png';
 import time from '../Images/time.png';
 import Button from '../Botton/Button';
 import StaffMembers from './StaffMembers';
+import NavBar from '../NavBar/NavBar';
 const About = () => {
   return (
     <>
+        <NavBar/>
         <div className="w-4/5 mx-auto my-10 md:flex md:items-center md:justify-between">
             <img src={travel} alt="" className='w-2/4'/>
             <div>
