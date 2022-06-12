@@ -10,6 +10,8 @@ import Login from "../components/Login/Login";
 import List from "../Dashboard/List/List";
 import SingleUser from "../Dashboard/Single/SingleUser";
 import NewService from "../Dashboard/New/NewService";
+import ServicesDashboard from "../Dashboard/Services/ServicesDashboard";
+import Orders from "../Dashboard/Orders/Orders";
 
 const Routers = () => {
     return (
@@ -21,17 +23,21 @@ const Routers = () => {
               <Route path="about" element={<About />} />
 
               <Route path="services">
-                <Route index element={<Services />} />
-                <Route path=":serviceId" element={<Service/>} />  
+                <Route exact index element={<Services />} />
+                <Route exact path=":serviceId" element={<Service/>} />  
               </Route>
 
               <Route path="dashboard">
                 <Route index element={<HomeDashboard />} />
+                <Route path="orders" element={<Orders />} />
                 <Route path="users">
                   <Route index element={<List />} />
                   <Route path=":userId" element={<SingleUser/>} />   
                 </Route>
-                <Route path="new" exact element={<NewService/>} /> 
+                <Route path="services">
+                  <Route index element={<ServicesDashboard/>} />
+                  <Route path="new" element={<NewService/>} />   
+                </Route>
               </Route>
               
 
