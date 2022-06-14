@@ -1,40 +1,38 @@
 export const userColumns = [
     { field: "id", headerName: "ID", width: 70 },
     {
-      field: "user",
-      headerName: "User",
-      width: 230,
+      field: "link",
+      headerName: "Image",
+      width: 160,
       renderCell: (params) => {
         return (
           <div className="flex items-center">
-            <img className="w-[32px] h-[32px] rounded-full mr-[20px] object-cover" src={params.row.img} alt="avatar" />
+            <img className="w-[32px] h-[32px] rounded-full mr-[20px] object-cover" src={params.row.link} alt="service" />
             {params.row.username}
           </div>
         );
       },
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "name",
+      headerName: "Name",
       width: 230,
     },
   
     {
-      field: "age",
-      headerName: "Age",
+      field: "time",
+      headerName: "Time",
       width: 100,
     },
     {
-      field: "status",
-      headerName: "Status",
-      width: 160,
-      renderCell: (params) => {
-        return (
-          <div className={`cellWithStatus ${params.row.status}`}>
-            {params.row.status}
-          </div>
-        );
-      },
+      field: "dollar",
+      headerName: "($)",
+      width: 100,
+    },
+    {
+      field: "frw",
+      headerName: "(Frw)",
+      width: 100,
     },
   ];
   

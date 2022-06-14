@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { addDoc, collection, serverTimestamp} from "firebase/firestore"; 
 import { db, storage } from '../../config/firebase-config';
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { useNavigate } from 'react-router-dom';
 
 
 const NewService = () => {
@@ -17,6 +18,7 @@ const NewService = () => {
     const [description, setDescription] = useState("");
     const [addition, setAddition] = useState("");
     const [per, setPer] = useState(null);
+    const navigate = useNavigate()
 
     useEffect(() => {
     const uploadFile = () => {
@@ -73,6 +75,7 @@ const NewService = () => {
             addition,
             timestamp: serverTimestamp()
           });
+          navigate(-1);
        } catch (error) {
            console.log(error)
        }
@@ -97,27 +100,27 @@ const NewService = () => {
                             </div>
                             <div className='w-[40%]'>
                                 <label>Service Name</label>
-                                <input className='w-full' type="text" placeholder="couple massage" onChange={e =>setName(e.target.value)}/>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setName(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
                                 <label>Time it Takes</label>
-                                <input className='w-full' type="text" placeholder="couple massage" onChange={e =>setTime(e.target.value)}/>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setTime(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
                                 <label>Price[FRW]</label>
-                                <input className='w-full' type="text" placeholder="couple massage" onChange={e =>setFrw(e.target.value)}/>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setFrw(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
                                 <label>Price[$]</label>
-                                <input className='w-full' type="text" placeholder="couple massage" onChange={e =>setDollar(e.target.value)}/>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setDollar(e.target.value)}/>
                             </div>
                             <div className='w-[100%]'>
                                 <label>Description</label>
-                                <textarea className='w-full' name="" placeholder="Describe the Service" onChange={e =>setDescription(e.target.value)}></textarea>
+                                <textarea className='w-full text-defaultGray' name="" placeholder="Describe the Service" onChange={e =>setDescription(e.target.value)}></textarea>
                             </div>
                             <div className='w-[100%]'>
                                 <label>Addition</label>
-                                <textarea className='w-full' name="" placeholder="Anything to add" onChange={e =>setAddition(e.target.value)}></textarea>
+                                <textarea className='w-full text-defaultGray' name="" placeholder="Anything to add" onChange={e =>setAddition(e.target.value)}></textarea>
                             </div>
                             <button disabled={per !== null && per < 100} className='w-[150px] bg-yellow-600 py-2 text-white rounded' type='submit'>Post</button>
                         </form>
