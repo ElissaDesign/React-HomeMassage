@@ -1,5 +1,5 @@
-import girl from '../Images/girl.png'
-import boy from '../Images/boy.png'
+import girl from '../../images/girl.png'
+import boy from '../../images/boy.png'
 const StaffMembers = () => {
   return (
     <>
