@@ -1,11 +1,13 @@
-import travel from '../Images/travel.png';
-import shipping from '../Images/shipping.png';
-import time from '../Images/time.png';
-import Button from '../Botton/Button';
+import travel from '../../images/travel.png';
+import shipping from '../../images/shipping.png';
+import time from '../../images/time.png';
+import Button from '../../components/Botton/Button';
 import StaffMembers from './StaffMembers';
+import NavBar from '../../components/NavBar/NavBar';
 const About = () => {
   return (
     <>
+        <NavBar/>
         <div className="w-4/5 mx-auto my-10 md:flex md:items-center md:justify-between">
             <img src={travel} alt="" className='w-2/4'/>
             <div>

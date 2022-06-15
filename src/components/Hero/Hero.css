@@ -4,7 +4,7 @@
     /* margin-top:-30px; */
     z-index: -1;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)),url(../Images/hero.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)),url(../../images/hero.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

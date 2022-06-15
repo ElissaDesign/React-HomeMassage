@@ -1,4 +1,4 @@
-import logo from '../Images/logo.png';
+import logo from '../../images/logo.png';
 import { useState } from 'react';
 import SocialNav from '../SocialNav/SocialNavLinks';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,6 @@ const NavBar = () => {
         {name: 'Services', link:'/services'},
         {name: 'About', link:'/about'},
         {name: 'Contact', link:'/contact'},
-        {name: 'SignIn', link:'/signin'},
     ]
     let [open, setOpen] =useState(false)
     const [Fix, setFix] =useState(false)
@@ -39,7 +38,7 @@ const NavBar = () => {
                             </li>
                             ))}
                         
-                        <button className='transition ease-in-out duration-700 px-4 py-3 text-white rounded-xl bg-blue hover:bg-white hover:text-primary '>Get Demo</button>
+                        <button className='transition ease-in-out duration-700 px-4 py-3 text-white rounded-xl bg-blue hover:bg-white hover:text-primary '>Demo</button>
                         </ul>
                     </div>
                 </nav>

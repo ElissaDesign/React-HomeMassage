@@ -14,7 +14,7 @@ const HomeServices = () => {
         <div className="home-services">
             <h2>Browser  our services</h2>
 
-            <div className="swiper-container">
+            <div className="swiper-container block md:flex">
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
