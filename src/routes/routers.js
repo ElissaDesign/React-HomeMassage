@@ -2,8 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import About from "../Pages/About/About";
 import Footer from "../components/Footer/Footer";
 import Home from "../Pages/Home/Home";
-import Services from "../components/Services/Services";
-import Service from "../components/SingleService/Service";
+import Services from "../Pages/Services/Services";
 import SocialMediaLinks from "../components/SocialMediaLinks/SocialMediaLinks";
 import HomeDashboard from "../Dashboard/dashboard";
 import Login from "../Pages/Login/Login";
@@ -12,6 +11,7 @@ import SingleUser from "../Dashboard/Single/SingleUser";
 import NewService from "../Dashboard/New/NewService";
 import ServicesDashboard from "../Dashboard/Services/ServicesDashboard";
 import Orders from "../Dashboard/Orders/Orders";
+import PageDetails from "../Pages/PageDetails/PageDetails";
 
 const Routers = () => {
 
@@ -30,7 +30,7 @@ const Routers = () => {
 
               <Route path="services">
                 <Route exact index element={<Services />} />
-                <Route exact path=":serviceId" element={<Service/>} />  
+                <Route exact path=":serviceId" element={<PageDetails/>} />  
               </Route>
 
               <Route path="dashboard">

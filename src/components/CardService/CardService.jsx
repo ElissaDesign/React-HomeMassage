@@ -39,7 +39,8 @@ const ServiceC = () => {
       unsub();
     }
   },[])
-  console.log(data)
+
+
     return ( 
       <div className='block md:flex items-start'>
         <Swiper
@@ -86,7 +87,7 @@ const ServiceC = () => {
         subheader="September 14, 2016"
       />
       <Link 
-      to="services"
+      to={`services/${service.id}`}
         component="button"
         variant="body2"
         onClick={() => {
