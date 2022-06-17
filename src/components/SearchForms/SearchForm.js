@@ -1,4 +1,3 @@
-import './SearchForm.css';
 import { useEffect, useState } from 'react';
 import { collection,onSnapshot } from "firebase/firestore";
 import { db } from '../../config/firebase-config';
@@ -14,6 +13,7 @@ import { Grid } from '@mui/material';
 const SearchForm = () => {
 
         const [data, setData] = useState([]);
+        const [value, setValue] = useState("");
     useEffect(() =>{
         const unsub = onSnapshot(collection(db, "services"), (snapshot) => {
         let list =[];
@@ -29,10 +29,16 @@ const SearchForm = () => {
         unsub();
         }
     },[])
+
+    useEffect(()=>{
+        if(value.length > 0){
+            fetch()
+        }
+    }, [value])
     return (
         <>
-            <div className="form-containers">
-                <div className="category">
+            <div className="w-[80%] mx-auto my-20 block md:flex items-center justify-around">
+                <div className="hidden md:block">
                     <label htmlFor="">Category:</label>
                     <select name="" id="">
                         <option value="">All</option>
@@ -41,20 +47,20 @@ const SearchForm = () => {
                         <option value="">Relaxing</option>
                     </select>
                 </div>
-                <div className="search">
-                    <input type="text" placeholder='Find a Service'/>
-                    <button>Search</button>
+                <div className="">
+                    <input type="text" placeholder='Find a Service' className='shadow-sm px-4 py-2' onChange={(event) =>{setValue(event.target.value)}} value={value}/>
+                    <button className='ml-4 border border-primary py-2 px-4 text-primary hover:shadow-lg hover:drop-shadow-md'>Search</button>
                 </div>
             </div>
             <div className='text-center'>
                 <h1 className='text-4xl text-primary m-6'>Home Massage Services</h1>
                 <h2 className='text-2xl '>What’s your mood today? Pick a service and get relaxed</h2>
             </div>
-            <div className="all-services-container">
+            <div className="w-[80%] my-[30px] mx-auto block md:flex flex-wrap items-center">
                 {data.map( (service) =>(
-                    <div className="multiple-service-Container">
-                        <Grid>
-                        <Card sx={{ maxWidth: 345 }}>
+                    <div className="w-full py-[15px] px-[10px] md:w-[30%]">
+                        <div className=''>
+                        <Card xs={{ maxWidth: 345 }}>
                         <CardMedia
                             component="img"
                             alt="green iguana"
@@ -75,7 +81,7 @@ const SearchForm = () => {
                             <Button size="small"><Link to={`${service.id}`}>Learn More</Link></Button>
                         </CardActions>
                         </Card>
-                        </Grid>
+                        </div>
                     </div>
                 ))}
             </div>
