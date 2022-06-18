@@ -37,7 +37,7 @@ const Hero = () => {
             <div className="w-full h-full">
                 <img className="w-full h-full object-cover" src={images?.link} alt={images?.name} />
             </div>
-            <div className="absolute w-full top-[20%] p-4 md:p-8">
+            <div className="absolute w-full top-[30%] p-4 md:p-8">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4">{images?.name} Massage</h1>
                 <div>
                 <button className="border bg-gray text-black border-gray py-2 px-5">Learn More</button>

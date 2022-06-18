@@ -3,7 +3,7 @@ import './AddressFooter.css';
 const AddressFooter = () => {
     return (
         
-            <div className="w-4/5 mx-auto md:flex mb:justify-around">
+            <div className="w-4/5 mx-auto md:flex mb:justify-around shadow p-4 drop-shadow-sm hover:shadow-lg">
                 <div className="md:mr-20 text-center ">
                     <h2 className='text-center md:text-left text-primary text-xl mb-4'>Lörem ipsum kaning niska </h2>
                     <p className='md:text-left'>Lörem ipsum kaning niska kvasitesm, dekajosk juligt. Monoling dys. Teplar pes i jud. Vyr enosmos. Sorejon salukudade. Du kan vara drabbad. </p>
