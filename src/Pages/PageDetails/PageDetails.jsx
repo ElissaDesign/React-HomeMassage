@@ -28,16 +28,16 @@ const PageDetails = () => {
             <div>
             <img src={data.link} alt=" hello" />
             </div>
-            <div className="flex items-center justify-around my-6 shadow p-4 drop-shadow-sm hover:shadow-lg">
+            <div className="flex items-center justify-around my-6 shadow p-4 drop-shadow-sm hover:shadow-lg bg-blue">
                 <div>
                     <h2 className="text-primary mb-3">Price:</h2>
-                    <h3>Francs(Rwf): {data?.frw}</h3>
-                    <h3>Francs(Rwf): {data?.frw1}</h3>
+                    <h3 className="text-white">Francs(Rwf): {data?.frw}</h3>
+                    <h3 className="text-white">Francs(Rwf): {data?.frw1}</h3>
                 </div>
                 <div>
                     <h2 className="text-primary mb-3">Time:</h2>
-                    <h3>First:  {data?.time1}</h3>
-                    <h3>Second:  {data?.time2}</h3>
+                    <h3 className="text-white">First:  {data?.time1}</h3>
+                    <h3 className="text-white">Second:  {data?.time2}</h3>
                 </div>
             </div>
             <div className="flex items-center justify-center">
