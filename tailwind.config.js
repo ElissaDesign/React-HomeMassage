@@ -7,6 +7,9 @@ module.exports = {
       }
     },
     colors: {
+      default:{
+        300: '#555555'
+      },
       crimsom: '#990000',
       defaultGray: '#808080',
       gray: "#D3D3D3",

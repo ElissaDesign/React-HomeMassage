@@ -8,8 +8,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
-
 const SearchForm = () => {
 
         const [data, setData] = useState([]);
@@ -35,9 +33,17 @@ const SearchForm = () => {
             fetch()
         }
     }, [value])
+
+    const trancateString = (str,num) =>{
+        if(str?.length > num ){
+            return str.slice(0, num) +'...';
+        }else{
+            return str;
+        }
+    }
     return (
         <>
-            <div className="w-[80%] mx-auto my-20 block md:flex items-center justify-around">
+            <div className="w-[90%] md:w-[80%] mx-auto my-20 block md:flex items-center justify-around shadow p-4 drop-shadow-sm hover:shadow-lg">
                 <div className="hidden md:block">
                     <label htmlFor="">Category:</label>
                     <select name="" id="">
@@ -53,10 +59,10 @@ const SearchForm = () => {
                 </div>
             </div>
             <div className='text-center'>
-                <h1 className='text-4xl text-primary m-6'>Home Massage Services</h1>
+                <h1 className='text-2xl md:text-3xl text-primary m-6'>Home Massage Services</h1>
                 <h2 className='text-2xl '>What’s your mood today? Pick a service and get relaxed</h2>
             </div>
-            <div className="w-[80%] my-[30px] mx-auto block md:flex flex-wrap items-center">
+            <div className="w-[80%] my-[30px] mx-auto block md:flex flex-wrap items-center shadow p-4 drop-shadow-sm hover:shadow-lg">
                 {data.map( (service) =>(
                     <div className="w-full py-[15px] px-[10px] md:w-[30%]">
                         <div className=''>
@@ -65,15 +71,14 @@ const SearchForm = () => {
                             component="img"
                             alt="green iguana"
                             height="140"
-                            image={service.link}
+                            image={service?.link}
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Lizard
+                            <Typography gutterBottom variant="h6" component="div">
+                            {service.name} Massage
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
+                            {trancateString(service?.description, 150)}
                             </Typography>
                         </CardContent>
                         <CardActions>

@@ -40,6 +40,14 @@ const ServiceC = () => {
     }
   },[])
 
+  const trancateString = (str,num) =>{
+    if(str?.length > num ){
+        return str.slice(0, num) +'...';
+    }else{
+        return str;
+    }
+}
+
 
     return ( 
       <div className='block md:flex items-start'>
@@ -104,9 +112,7 @@ const ServiceC = () => {
       
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          {trancateString(service?.description, 150)}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

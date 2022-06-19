@@ -5,7 +5,7 @@ const StaffMembers = () => {
     <>
         <h1 className='text-center text-white bg-blue px-2 py2 mt-20 uppercase'>Our  Staff members</h1>
         <div className='bg-blue'>
-        <div className=' w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg'>
+        <div className='w-[95%] md:w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg text-default-300 leading-normal font-light subpixel-antialiased'>
             <img src={girl} alt="" className='md:w-1/4 w-2/4 block mx-auto'/>
             <div className='block'>
                 <h1 className='md:text-left md:ml-40 text-primary font-mediun text-center text-3xl my-2'>MUTONI Diane</h1>
@@ -22,7 +22,7 @@ const StaffMembers = () => {
             </div>
         </div>
         </div>
-        <div className=' w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg'>
+        <div className='w-[95%] md:w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg text-default-300 leading-normal font-light subpixel-antialiased'>
             <div className='text-right px-2 md:px-6'>
                 <h1 className='md:text-left  text-primary font-mediun text-center mb-2 text-3xl'>MUDAHIGWA Lucky Stanley</h1>
                 <p className='md:text-left  text-center'>
