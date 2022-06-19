@@ -92,7 +92,7 @@ const ServiceC = () => {
         }
         
         title={`${service.name} Massage`}
-        subheader="September 14, 2016"
+        subheader={`${service?.time1}  ${service?.time2}  ${service?.frw} Rwf`}
       />
       <Link 
       to={`services/${service.id}`}
