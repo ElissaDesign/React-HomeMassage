@@ -52,10 +52,10 @@ const Home = () => {
             </div>
 
 
-        <div className="w-[95%] md:w-4/5 mx-auto my-10 py-10 md:flex md:items-center md:justify-center shadow p-4 drop-shadow-sm hover:shadow-lg">
+        <div className="w-[95%] md:w-4/5 mx-auto my-10 py-10 md:flex md:items-center md:justify-center shadow p-4 drop-shadow-sm hover:shadow-lg bg-blue">
             <div className="">
-                <h2 className='text-center text-primary mb-4 text-2xl'>Get Healed </h2>
-                <p className='text-center md:text-left text-default-300 leading-normal font-light subpixel-antialiased'>
+                <h2 className='text-center text-primary mb-4 text-2xl font-bold'>Get Healed </h2>
+                <p className='text-center md:text-left leading-normal font-light subpixel-antialiased text-white'>
                 You’ve probably heard about the healing benefits of massage therapy services. In fact, there’s a huge body of medical research that supports the use of massage therapy for healthy mind and body. In addition to the “healing” aspect, people often forget about the myriad of ways bodywork therapy can enhance performance for athletes and others who need to stay in top shape to do their jobs. <br/>
                 This ancient treatment also has the ability to help injured patients recover and get back on track. Finally, one of the most common forms of therapy, Swedish massage, simply aims to deliver a full-body relaxation effect for stressed muscles and minds. As licensed massage therapists, we have the potential to make every client’s life better in many different ways.
                 </p>
