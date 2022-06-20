@@ -82,7 +82,7 @@ const SearchForm = () => {
                             </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small"><Link to={`${service.id}`}>Book</Link></Button>
+                            <Button size="small"><Link to="/contact">Book</Link></Button>
                             <Button size="small"><Link to={`${service.id}`}>Learn More</Link></Button>
                         </CardActions>
                         </Card>
