@@ -5,7 +5,9 @@ import CardService from '../../components/CardService/CardService';
 import Staff from '../../images/staff.svg';
 import Booking from '../../images/booking.svg';
 import ChairMassageImage from '../../images/chair.png'
-import Artboard from '../../images/Artboard-1.png'
+import Artboard from '../../images/Artboard-1.png';
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <div>
@@ -74,7 +76,7 @@ const Home = () => {
                     brings the spa to you and lets you relax and unwind from the daily stress of life, in the comfort of your 
                     home. But massage chairs help with much more than “make you feel good.” And in this comprehensive guide, I’m going 
                     to tell you that but before we get into it, if you don`t know how a massage chair works here is an article that ought to help</p><br/>
-                <button className='border border-primary text-primary p-2 hover:shadow-xl block mx-auto my-4'>Book now</button>
+                <button className='border border-primary text-primary p-2 hover:shadow-xl block mx-auto my-4'><Link to="/contact">Book Now</Link></button>
             </div>
            </div>
             </div>

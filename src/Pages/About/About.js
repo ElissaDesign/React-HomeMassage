@@ -3,6 +3,8 @@ import shipping from '../../images/shipping.png';
 import time from '../../images/time.png';
 import StaffMembers from './StaffMembers';
 import NavBar from '../../components/NavBar/NavBar';
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -26,7 +28,7 @@ const About = () => {
                  hot stone massage, relaxing massage, parties, and other events.
             </p>
             <div className='flex items-center justify-center mt-10'>
-            <button className='border px-4 py-2 mt-3 md:mt-0 border-primary mx-4 text-primary hover:shadow-lg transition-shadow'>Book Now</button>
+            <button className='border px-4 py-2 mt-3 md:mt-0 border-primary mx-4 text-primary hover:shadow-lg transition-shadow'><Link to="/contact">Book Now</Link></button>
             </div>
         </div>
 

@@ -1,5 +1,6 @@
 import girl from '../../images/girl.png'
-import boy from '../../images/boy.png'
+import boy from '../../images/boy.png';
+import { Link } from "react-router-dom";
 const StaffMembers = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const StaffMembers = () => {
                     <span className='fa fa-phone'></span>
                     <p className='mx-2'>+250 789 806 310</p>
                     </div>
-                    <button className='border px-4 py-2 mt-3 md:mt-0 border-white mx-4 hover:text-yellow hover:border-yellow-600 transition-shadow'>Book Now</button>
+                    <button className='border px-4 py-2 mt-3 md:mt-0 border-white mx-4 hover:text-yellow hover:border-yellow-600 transition-shadow'><Link to="/contact">Book Now</Link></button>
                 </div>
             </div>
         </div>
@@ -33,7 +34,7 @@ const StaffMembers = () => {
                     <span className='fa fa-phone'></span>
                     <p className='mx-2'>+250 789 806 310</p>
                     </div>
-                    <button className='border px-4 py-2 mt-3 md:mt-0 border-primary mx-4 text-primary hover:shadow-lg transition-shadow text-sm'>Book Now</button>
+                    <button className='border px-4 py-2 mt-3 md:mt-0 border-primary mx-4 text-primary hover:shadow-lg transition-shadow text-sm'><Link to="/contact">Book Now</Link></button>
 
                 </div>
             </div>

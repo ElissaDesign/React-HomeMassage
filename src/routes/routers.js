@@ -12,6 +12,7 @@ import NewService from "../Dashboard/New/NewService";
 import ServicesDashboard from "../Dashboard/Services/ServicesDashboard";
 import Orders from "../Dashboard/Orders/Orders";
 import PageDetails from "../Pages/PageDetails/PageDetails";
+import UserForm from "../Pages/Contact/UserForm";
 
 const Routers = () => {
 
@@ -31,6 +32,9 @@ const Routers = () => {
               <Route path="services">
                 <Route exact index element={<Services />} />
                 <Route exact path=":serviceId" element={<PageDetails/>} />  
+              </Route>
+              <Route path="contact">
+                <Route exact index element={<UserForm />} /> 
               </Route>
 
               <Route path="dashboard">

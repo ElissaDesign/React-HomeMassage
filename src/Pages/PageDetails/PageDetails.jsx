@@ -3,6 +3,8 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../config/firebase-config";
 import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
+import { Link } from "react-router-dom";
+
 
 const PageDetails = () => {
     const { serviceId} = useParams(); 
@@ -19,14 +21,14 @@ const PageDetails = () => {
   return (
     <div>
         <NavBar/>
-        <div className="w-[75%] mx-auto my-16">
+        <div className="w-[95%] md:w-[75%] mx-auto my-16">
             <div>
-                <h2 className="text-center text-4xl text-primary my-8">{data?.name} Massage</h2>
+                <h2 className="text-center text-3xl md:text-4xl text-primary my-8">{data?.name} Massage</h2>
                 <h2 className="text-center text-3xl italic my-8">Massage and Wellness ~ The Essential Balance</h2>
                 <p className="mb-4 leading-7 text-center">It is not just a massage but the perfect therapy you need to rejuvenate and recoup for going about your daily routine. GharPar massage is your power house! Let us help you achieve your life goals hassle-free.</p>
             </div>
             <div>
-            <img src={data.link} alt=" hello" />
+            <img src={data.link} alt={data.name} />
             </div>
             <div className="flex items-center justify-around my-6 shadow p-4 drop-shadow-sm hover:shadow-lg bg-blue">
                 <div>
@@ -41,7 +43,7 @@ const PageDetails = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <button className="border py-2 px-5 border-primary text-primary">Book Now</button>
+                <button className="border py-2 px-5 border-primary text-primary"><Link to="/contact">Book Now</Link></button>
             </div>
             <div className="my-14 shadow p-4 drop-shadow-sm hover:shadow-lg">
                 <p>{data.description}</p>
