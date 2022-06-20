@@ -11,7 +11,9 @@ const StaffMembers = () => {
             <div className='block'>
                 <h1 className='md:text-left md:ml-40 text-primary font-mediun text-center text-3xl my-2'>MUTONI Diane</h1>
                 <p className='md:text-left md:ml-40 text-center text-white'>
-                    Lörem ipsum poliga kontradat och ultraryk det vill säga multise #metoo. Bektigt pas pogt. Antire keng ganing vis. Varsomhelstare posobelt. Higon dosa. 
+                Mutoni Diane in Physical Therapy from Makines H.T.C (Makines Vocational Training Center)  in 2018. Here in home massage Rwanda to serve you troughs your massage appointment as we are offering mobile massage services here in Kigali Rwanda. For clients who prefer being served by female therapist, therapist Diane she really ready to serve you any time.
+                <br/>
+                Just remember to book now for your massage appointment. 
                 </p>
                 <div className='block text-center md:text-right md:ml-40 md:flex items-center my-6 text-white'>
                     <div className='flex items-center justify-center'>
