@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import NavBar from '../../components/NavBar/NavBar'
 
 export class FormUserDetails extends Component {
   continue = e => {
@@ -11,6 +12,8 @@ export class FormUserDetails extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
+      <>
+      <NavBar/>
       <div className='w-[90%] md:w-[50%] mx-auto my-4 h-screen'>
         <h1>Enter Your Details</h1>
         <div>
@@ -48,6 +51,7 @@ export class FormUserDetails extends Component {
             >Continue</Button>
         </div>
       </div>
+      </>
       
     );
   }

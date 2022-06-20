@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { List, ListItem, ListItemText } from '@mui/material';
 import Button from '@mui/material/Button';
+import NavBar from '../../components/NavBar/NavBar'
+
 
 
 export class Confirm extends Component {
@@ -28,7 +30,7 @@ export class Confirm extends Component {
 
     return (
       <>
-      {/* <NavBar/> */}
+      <NavBar/>
       <div className='w-[90%] md:w-[50%] mx-auto my-4 h-screen'>
         <h1></h1>
         <div>

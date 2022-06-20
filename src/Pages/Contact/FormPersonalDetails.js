@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import NavBar from '../../components/NavBar/NavBar'
+
 
 export class FormPersonalDetails extends Component {
 
@@ -18,6 +20,8 @@ export class FormPersonalDetails extends Component {
   
     const { values, handleChange } = this.props;
     return (
+      <>
+      <NavBar/>
       <div className='w-[90%] md:w-[50%] mx-auto my-4 h-screen'>
         <h1></h1>
         <div>
@@ -77,6 +81,7 @@ export class FormPersonalDetails extends Component {
           </form>
         </div>
       </div>
+      </>
     );
   }
 }
