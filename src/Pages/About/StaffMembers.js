@@ -29,7 +29,11 @@ const StaffMembers = () => {
             <div className='text-right px-2 md:px-6'>
                 <h1 className='md:text-left  text-primary font-mediun text-center mb-2 text-3xl'>MUDAHIGWA Lucky Stanley</h1>
                 <p className='md:text-left  text-center'>
-                    Lörem ipsum poliga kontradat och ultraryk det vill säga multise #metoo. Bektigt pas pogt. Antire keng ganing vis. Varsomhelstare posobelt. Higon dosa. 
+                The Director & founder of Home Massage Rwanda since 2017 in Kigali. Therapist Lucky Stanley MUDAHIGWA certified and experienced in Medical massage services sport massages, prenatal massages.
+                <br/>
+                And offer (outreach) mobile services in Kigali Rwanda interesting news is to save the time and money of our clients. No need to travel to spa any more!!
+                <br/>
+                Lucky Stanley always appreciate to support the world through the healing of patients , am the back pain removal, stress removal…….
                 </p>
                 <div className='block text-center md:text-left md:flex items-center my-6'>
                     <div className='flex items-center justify-center'>

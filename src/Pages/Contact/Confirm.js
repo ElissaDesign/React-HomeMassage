@@ -3,8 +3,6 @@ import { List, ListItem, ListItemText } from '@mui/material';
 import Button from '@mui/material/Button';
 import NavBar from '../../components/NavBar/NavBar'
 
-
-
 export class Confirm extends Component {
   continue = e => {
     e.preventDefault();
@@ -20,13 +18,12 @@ export class Confirm extends Component {
 
 
 
-
-
   render() {
     const {
       values: { fullName, phoneNumber, email, serviceName, time, gender, addition }
     } = this.props;
     const {values} = this.props;
+    console.log(values)
 
     return (
       <>
