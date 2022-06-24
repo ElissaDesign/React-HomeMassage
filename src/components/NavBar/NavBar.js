@@ -33,7 +33,7 @@ const NavBar = () => {
                         </div>
                         <ul className={`md:flex md:items-center bg-primary absolute right-0 w-2/5  md:sticky  transition-all duration-500 ease-in ${open ? 'top-20 opacity-100':'top-[-500px] opacity-0'} opacity-100  md:opacity-100 md:pt-0 pt-6 md:pl-0 pl-10 md:py-0 py-10 `}>
                             {Links.map((link) =>(
-                                <li className='md:mx-3 md:my-0 my-7 '>
+                                <li className='md:mx-3 md:my-0 my-7 ' key={link.name}>
                                 <Link  to={link.link} className='text-white hover:text-blue duration-500'>{link.name}</Link>
                             </li>
                             ))}
