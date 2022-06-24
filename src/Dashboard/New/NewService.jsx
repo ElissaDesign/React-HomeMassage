@@ -12,9 +12,11 @@ const NewService = () => {
     const [file, setFile] = useState('');
     const [link, setLink] = useState('');
     const [name, setName] = useState("");
-    const [time, setTime] = useState("");
+    const [time1, setTime1] = useState("");
+    const [time2, setTime2] = useState("");
     const [dollar, setDollar] = useState("");
     const [frw, setFrw] = useState("");
+    const [frw1, setFrw1] = useState("");
     const [description, setDescription] = useState("");
     const [addition, setAddition] = useState("");
     const [per, setPer] = useState(null);
@@ -68,9 +70,11 @@ const NewService = () => {
         const res = await addDoc(collection(db, "services"), {
             name,
             link,
-            time,
+            time1,
+            time2,
             dollar,
             frw,
+            frw1,
             description,
             addition,
             timestamp: serverTimestamp()
@@ -103,16 +107,20 @@ const NewService = () => {
                                 <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setName(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
-                                <label>Time it Takes</label>
-                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setTime(e.target.value)}/>
+                                <label>Time it Takes[ 1 ]</label>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setTime1(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
-                                <label>Price[FRW]</label>
+                                <label>Time it Takes[ 2 ]</label>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setTime2(e.target.value)}/>
+                            </div>
+                            <div className='w-[40%]'>
+                                <label>Price[FRW~1]</label>
                                 <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setFrw(e.target.value)}/>
                             </div>
                             <div className='w-[40%]'>
-                                <label>Price[$]</label>
-                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setDollar(e.target.value)}/>
+                                <label>Price[FRW~2]</label>
+                                <input className='w-full text-defaultGray' type="text" placeholder="couple massage" onChange={e =>setFrw1(e.target.value)}/>
                             </div>
                             <div className='w-[100%]'>
                                 <label>Description</label>
