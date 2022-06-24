@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { List, ListItem, ListItemText } from '@mui/material';
 import Button from '@mui/material/Button';
 import NavBar from '../../components/NavBar/NavBar'
+import SendMail from './SendMail';
 
 export class Confirm extends Component {
   continue = e => {
@@ -23,7 +24,6 @@ export class Confirm extends Component {
       values: { fullName, phoneNumber, email, serviceName, time, gender, addition }
     } = this.props;
     const {values} = this.props;
-    console.log(values)
 
     return (
       <>
@@ -69,6 +69,10 @@ export class Confirm extends Component {
               onClick={this.continue}
             >Confirm & Continue</Button>
           </form>
+
+          <SendMail 
+          values={values}
+          />
         </div>
       </div>
       </>

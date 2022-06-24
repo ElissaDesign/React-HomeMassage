@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.3",
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.8.2",
     "fs": "^0.0.1-security",
+    "nodemailer": "^6.7.5",
     "path": "^0.12.7",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -50,10 +52,5 @@
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
   }
 }

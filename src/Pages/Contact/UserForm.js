@@ -1,79 +1,56 @@
-import React, { Component } from 'react';
-import FormUserDetails from './FormUserDetails';
-import FormPersonalDetails from './FormPersonalDetails';
-import Confirm from './Confirm';
-import Success from './Success';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import NavBar from '../../components/NavBar/NavBar'
 
-export class UserForm extends Component {
-  state = {
-    step: 1,
-    fullName: '',
-    phoneNumber: '',
-    email: '',
-    serviceName: '',
-    addition:'',
-    time: '',
-    gender: '',
+const UserForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0sgvy39', 'template_v3fxxhl', form.current, 'zYyBQt12awpKz-BpQ')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message Sent")
+          window.alert("Message Sent");
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+          window.alert("Message was not sent");
+      });
   };
-
-  // Proceed to next step
-  nextStep = () => {
-    const { step } = this.state;
-    this.setState({
-      step: step + 1
-    });
-  };
-
-  // Go back to prev step
-  prevStep = () => {
-    const { step } = this.state;
-    this.setState({
-      step: step - 1
-    });
-  };
-
-  // Handle fields change
-  handleChange = input => e => {
-    this.setState({ [input]: e.target.value });
-  };
-
-  render() {
-    const { step } = this.state;
-    const { fullName, phoneNumber, email, serviceName, time, gender, addition } = this.state;
-    const values = { fullName, phoneNumber, email, serviceName, time, gender, addition };
-
-    switch (step) {
-      case 1:
-        return (
-          <FormUserDetails
-            nextStep={this.nextStep}
-            handleChange={this.handleChange}
-            values={values}
-          />
-        );
-      case 2:
-        return (
-          <FormPersonalDetails
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            handleChange={this.handleChange}
-            values={values}
-          />
-        );
-      case 3:
-        return (
-          <Confirm
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            values={values}
-          />
-        );
-      case 4:
-        return <Success />;
-      default:
-        (console.log('This is a multi-step form built with React.'))
-    }
-  }
+  return (
+   <div>
+     <NavBar/>
+      <div className='w-[95%] md:w-[70%] mx-auto shadow p-4 drop-shadow-sm hover:shadow-lg my-10'>
+      <form ref={form} onSubmit={sendEmail} className="w-full mx-auto">
+      <label>Name</label>
+      <input type="text" name="user_name" placeholder='Enter your full name'  className='w-full my-5 p-2 text-sm'/>
+      <br />
+      <label>Email</label>
+      <input type="email" name="user_email" placeholder='Your Email'  className='w-full my-5 p-2 text-sm'/>
+      <br />
+      <label>Phone Number</label>
+      <input type="text" name="user_number" placeholder='Your Phone Number'  className='w-full my-5 p-2 text-sm'/>
+      <br />
+      <label>Service Name</label>
+      <input type="text" name="service_name" placeholder='Service name '  className='w-full my-5 p-2 text-sm'/>
+      <br />
+      <label>Massage by</label>
+      <select name="gender" id="" className='w-full my-5 p-2 text-sm'>
+        <option value="woman">Woman</option>
+        <option value="man">Man</option>
+      </select>
+      <br />
+      <label>Anything Alse?</label>
+      <textarea name="message" placeholder='Any addition on how can we help you?'  className='w-full my-5 p-2 text-sm'/>
+      <br />
+      {/* <input type="submit" value="Send" className='text-center'/> */}
+      <button type="submit" value="Send" className='bg-primary py-2 px-4 text-center w-full text-white'>Send</button>
+    </form>
+    </div>
+   </div>
+  )
 }
 
-export default UserForm;
+export default UserForm
