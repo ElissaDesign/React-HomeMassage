@@ -16,7 +16,7 @@ const PageDetails = () => {
             setData(doc.data(), doc.id);
         })
   },[])
-  console.log(data)
+//   console.log(data)
 
   return (
     <div>

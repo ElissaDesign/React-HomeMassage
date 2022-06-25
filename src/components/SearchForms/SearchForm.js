@@ -62,9 +62,9 @@ const SearchForm = () => {
                 <h1 className='text-2xl md:text-3xl text-primary m-6'>Home Massage Services</h1>
                 <h2 className='text-2xl '>What’s your mood today? Pick a service and get relaxed</h2>
             </div>
-            <div className="w-[80%] my-[30px] mx-auto block md:flex flex-wrap items-center shadow p-4 drop-shadow-sm hover:shadow-lg">
+            <div className="w-[95%] md:w-[80%] my-[30px] mx-auto block md:flex flex-wrap items-center shadow p-4 drop-shadow-sm hover:shadow-lg">
                 {data.map( (service) =>(
-                    <div className="w-full py-[15px] px-[10px] md:w-[30%]">
+                    <div className="w-full py-[15px] px-[10px] md:w-[30%]" key={service.id}>
                         <div className=''>
                         <Card xs={{ maxWidth: 345 }}>
                         <CardMedia
