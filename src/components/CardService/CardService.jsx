@@ -76,7 +76,7 @@ const ServiceC = () => {
           className="mySwiper"
             >
             {data.map((service, key) =>(
-              <SwiperSlide>
+              <SwiperSlide key={service.id}>
                 <Grid>
               <Card sx={{ maxWidth: 345 }}>
       <CardHeader
@@ -99,7 +99,7 @@ const ServiceC = () => {
         component="button"
         variant="body2"
         onClick={() => {
-          console.info("I'm a button.");
+          // console.info("I'm a button.");
         }}
       >
        <CardMedia

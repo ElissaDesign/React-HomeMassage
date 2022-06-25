@@ -39,15 +39,16 @@ const UserForm = () => {
       <label>Massage by</label>
       <select name="gender" id="" className='w-full my-5 p-2 text-sm'>
         <option value="any">Any</option>
-        <option value="woman">Woman</option>
-        <option value="man">Man</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="both">Both</option>
       </select>
       <br />
       <label>Anything Alse?</label>
-      <textarea name="message" placeholder='Any addition on how can we help you?'  className='w-full my-5 p-2 text-sm'/>
+      <textarea name="message" placeholder='Any addition on how we can help you?'  className='w-full my-5 p-2 text-sm'/>
       <br />
       {/* <input type="submit" value="Send" className='text-center'/> */}
-      <button type="submit" value="Send" className='bg-primary py-2 px-4 text-center w-full text-white'>Send</button>
+      <button type="submit" value="Send" className='bg-blue py-2 px-4 text-center w-full text-white'>Send</button>
     </form>
     </div>
    </div>
