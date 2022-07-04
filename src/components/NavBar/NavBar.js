@@ -38,7 +38,7 @@ const NavBar = () => {
                             </li>
                             ))}
                         
-                        <button className='transition ease-in-out duration-700 px-4 py-3 text-white rounded bg-blue hover:bg-white hover:text-primary '>Demo</button>
+                        <button className='transition ease-in-out duration-700 px-4 py-3 text-primary rounded bg-white hover:bg-primary hover:text-white hover:border '>Demo</button>
                         </ul>
                     </div>
                 </nav>
