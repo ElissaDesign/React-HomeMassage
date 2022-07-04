@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const StaffMembers = () => {
   return (
     <>
-        <h1 className='text-center text-white bg-blue px-2 py2 mt-20 uppercase text-2xl'>Our  Staff members</h1>
+        <h1 className='text-center text-white bg-primary px-2 py2 mt-20 uppercase text-2xl'>Our  Staff members</h1>
         <div className='bg-blue'>
         <div className='w-[95%] md:w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg text-default-300 leading-normal font-light subpixel-antialiased'>
             <img src={girl} alt="" className='md:w-1/4 w-2/4 block mx-auto'/>

@@ -15,7 +15,7 @@ const PageDetails = () => {
         .then((doc) => {
             setData(doc.data(), doc.id);
         })
-  },[])
+  },[serviceId])
 //   console.log(data)
 
   return (
@@ -30,14 +30,14 @@ const PageDetails = () => {
             <div>
             <img src={data.link} alt={data.name} />
             </div>
-            <div className="flex items-center justify-around my-6 shadow p-4 drop-shadow-sm hover:shadow-lg bg-blue">
+            <div className="flex items-center justify-around my-6 shadow p-4 drop-shadow-sm hover:shadow-lg bg-primary">
                 <div>
-                    <h2 className="text-primary mb-3">Price:</h2>
+                    <h2 className="text-white border-b-2 mb-3">Price:</h2>
                     <h3 className="text-white">Francs(Rwf): {data?.frw}</h3>
                     <h3 className="text-white">Francs(Rwf): {data?.frw1}</h3>
                 </div>
                 <div>
-                    <h2 className="text-primary mb-3">Time:</h2>
+                    <h2 className="text-white border-b-2 mb-3">Time:</h2>
                     <h3 className="text-white">First:  {data?.time1}</h3>
                     <h3 className="text-white">Second:  {data?.time2}</h3>
                 </div>

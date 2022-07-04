@@ -38,7 +38,7 @@ const About = () => {
             <img src={time} alt="" className='w-10 block mx-auto ' />
             <h1 className=' text-primary text-3xl my-4'>Working Hours</h1>
             <p className='px-0 md:px-10 text-default-300 leading-normal font-light subpixel-antialiased' >Appointments are being scheduled on a first come first serve basis. Take note that our availability can also change frequently so it is best to make a reservation ahead of time</p>
-            <p className='text-blue py-2 my-2 leading-normal font-light subpixel-antialiased'>monday-Sunday 8:00am–20:00pm</p>
+            <p className='text-primary py-2 my-2 leading-normal font-light subpixel-antialiased border'>Monday-Sunday, 8:00am–20:00pm</p>
         </div>
 
 
