@@ -31,10 +31,19 @@ const UserForm = () => {
       <input type="email" name="user_email" placeholder='Your Email'  className='w-full my-5 p-2 text-sm' required/>
       <br />
       <label>Phone Number</label>
-      <input type="text" name="user_number" placeholder='Your Phone Number'  className='w-full my-5 p-2 text-sm' required/>
+      <input type="text" name="user_number" placeholder='Your phone Number'  className='w-full my-5 p-2 text-sm' required/>
       <br />
       <label>Service Name</label>
       <input type="text" name="service_name" placeholder='Service name '  className='w-full my-5 p-2 text-sm' required/>
+      <br />
+
+      
+      <label>When?, Select date and time</label>
+      <div className='md:flex'>
+      <input type="time" name="service_time" placeholder='Service name '  className='w-full my-5 p-2 text-sm' required/>
+      <input type="date" name="service_date" placeholder='Service name '  className='w-full my-5 p-2 text-sm' required/>
+      </div>
+
       <br />
       <label>Massage by</label>
       <select name="gender" id="" className='w-full my-5 p-2 text-sm'>
