@@ -1,4 +1,4 @@
-import travel from '../../images/travel.png';
+import travel from '../../images/massage_therapists.png';
 import shipping from '../../images/shipping.png';
 import time from '../../images/time.png';
 import StaffMembers from './StaffMembers';
@@ -10,7 +10,7 @@ const About = () => {
     <>
         <NavBar/>
         <div className="w-[95%] md:w-4/5 mx-auto my-10 md:flex md:items-center md:justify-between shadow p-4 drop-shadow-sm hover:shadow-lg">
-            <img src={travel} alt="" className='w-2/4 block mx-auto'/>
+            <img src={travel} alt="" className='w-4/4 md:w-2/4 block mx-auto'/>
             <div className='px-0 md:px-4 '>
                 <h2 className='text-xl text-primary mb-5 font-bold text-center md:text-left'>
                     NO NEED TO TRAVEL TO SPA OR <br/>
