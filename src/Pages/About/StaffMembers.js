@@ -1,16 +1,17 @@
-import girl from '../../images/girl.png'
 import boy from '../../images/boy.png';
+import girl from '../../images/diane.png';
+
 import { Link } from "react-router-dom";
 const StaffMembers = () => {
   return (
     <>
         <h1 className='text-center text-white bg-primary px-2 py2 mt-20 uppercase text-2xl'>Our  Staff members</h1>
-        <div className='bg-blue'>
+        <div className=''>
         <div className='w-[95%] md:w-4/5 mx-auto md:flex md:items-center md:justify-center mt-10 shadow p-4 drop-shadow-sm hover:shadow-lg text-default-300 leading-normal font-light subpixel-antialiased'>
-            <img src={girl} alt="" className='md:w-1/4 w-2/4 block mx-auto'/>
+            <img src={girl} alt="" className='md:w-1/4 w-3/4 block mx-auto'/>
             <div className='block'>
                 <h1 className='md:text-left md:ml-40 text-primary font-mediun text-center text-3xl my-2'>MUTONI Diane</h1>
-                <p className='md:text-left md:ml-40 text-center text-white'>
+                <p className='md:text-left md:ml-40 text-center text-default-300'>
                 Mutoni Diane in Physical Therapy from Makines H.T.C (Makines Vocational Training Center)  in 2018. Here in home massage Rwanda to serve you troughs your massage appointment as we are offering mobile massage services here in Kigali Rwanda. For clients who prefer being served by female therapist, therapist Diane she really ready to serve you any time.
                 <br/>
                 Just remember to book now for your massage appointment. 
