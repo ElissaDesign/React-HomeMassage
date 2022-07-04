@@ -14,7 +14,7 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { orange, red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -66,7 +66,7 @@ const ServiceC = () => {
           }}
           spaceBetween={30}
           autoplay={{
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
             }}
           pagination={{
@@ -81,7 +81,7 @@ const ServiceC = () => {
               <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: orange[500] }} aria-label="recipe">
             M
           </Avatar>
         }
