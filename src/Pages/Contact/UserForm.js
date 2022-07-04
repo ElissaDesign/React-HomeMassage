@@ -48,7 +48,7 @@ const UserForm = () => {
       <textarea name="message" placeholder='Any addition on how we can help you?'  className='w-full my-5 p-2 text-sm'/>
       <br />
       {/* <input type="submit" value="Send" className='text-center'/> */}
-      <button type="submit" value="Send" className='bg-blue py-2 px-4 text-center w-full text-white'>Send</button>
+      <button type="submit" value="Send" className='bg-primary py-2 px-4 text-center w-full text-white'>Send</button>
     </form>
     </div>
    </div>

@@ -39,7 +39,7 @@ const Hero = () => {
                 <img className="w-full h-full object-cover" src={images?.link} alt={images?.name} />
             </div>
             <div className="absolute w-full top-[30%] p-4 md:p-8">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">{images?.name} Massage</h1>
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-primary">{images?.name} Massage</h1>
                 <div>
                 <button className="border bg-gray text-black hover:text-yellow-600 border-gray py-2 px-5"><Link to="/services">Learn More</Link></button>
                 <button className="border text-white border-gray hover:border-yellow-600 py-2 px-5 ml-4"><Link to="/contact">Book Now</Link></button>
