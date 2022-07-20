@@ -7,7 +7,7 @@ const SocialNav = () => {
             </div>
             <div className= " flex py-3 items-center justify-around ">
                 <i className="text-xs mr-2 md:text-sm fa text-yellow-600 fa-phone "></i>
-                <p className='text-xs sm:text-sm md:text-base text-Gray'>+250-780-666-758</p>
+                <p className='text-xs sm:text-sm md:text-base text-Gray'>+250-789-806-310</p>
             </div>
             <div className= "hidden md:flex py-3 sm:items-center justify-around ">
                 <i className="text-xs mr-2 md:text-sm fa text-yellow-600 fa-clock-o "></i>
