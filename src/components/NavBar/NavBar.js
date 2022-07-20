@@ -26,7 +26,7 @@ const NavBar = () => {
         <SocialNav/>
             <header className={`${Fix ? 'fixed top-0 left-0 right-0 h-100' : ''} bg-primary h-100 relative  w-full transition-all ease-in-out z-10`} >
                 <nav className='w-4/5 mx-auto flex items-center justify-between'>
-                    <Link to="/"><img src={logo} width={150} alt="home-massage-logo" className=' '/></Link>
+                    <Link to="/"><img src={logo} width={100} alt="home-massage-logo" className=' '/></Link>
                     <div>
                         <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-10 cursor-pointer md:hidden text-white'>
                         <i className={open ? "fa fa-times" :"fa fa-bars"}></i>
